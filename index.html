@@ -6,23 +6,36 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="circle.js"></script>
+</script>
 <style>
-    body, h1, h2, h3, h4, h5, h6 {
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-family: "Montserrat", sans-serif
     }
 
     .w3-row-padding img {
-        margin-bottom: 12px
+        margin-bottom: 100px
     }
+
     /* Set the width of the sidebar to 120px */
     .w3-sidebar {
         width: 120px;
         background: #222;
     }
+
     /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
     #main {
         margin-left: 120px
     }
+
     /* Remove margins from "page content" on small screens */
     @media only screen and (max-width: 600px) {
         #main {
@@ -30,13 +43,17 @@
         }
     }
 </style>
-<body class="w3-black">
+
+<head class="w3-black">
+</head>
+
+<body onload="startSite();" class="w3-black">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
     <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
         <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/515/694/3b5.jpg" style="width:100%">
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-darkgrey w3-hover-black">
             <i class="fa fa-home w3-xxlarge"></i>
             <p>Home</p>
         </a>
@@ -69,9 +86,36 @@
         </div>
     </div>
 
-  </header>
-    <a href=testingPage.html>testing page</a>
-  <!-- <img src="websitebanner.jpg" alt="header image"/> -->
+  <!--<img src="websitebanner.jpg" alt="header image" /> -->
+
+    <div id="container-2">
+        <div class="sun" id="sunID">
+            <div class="dot1" id="dotID1"><i class="fa fa-home w3-xxxlarge" style="left: 6px; position: relative;"></i>
+            </div>
+            <div class="dot2" id="dotID2"><i class="fa fa-book w3-xxxlarge" style="left: 6px; position: relative;"></i>
+            </div>
+            <div class="dot3" id="dotID3"><i class="fa fa-envelope w3-xxxlarge"
+                    style="left:6px; position: relative;"></i></div>
+            <div class="dot4" id="dotID4"><i class="fa fa-user w3-xxxlarge" style="left:6px; position: relative;"></i>
+            </div>
+            <div class="dot5" id="dotID5"></div>
+            <div class="dot6" id="dotID6"></div>
+            <div class="dot7" id="dotID7"></div>
+            <div class="dot8" id="dotID8"></div>
+        </div>
+    </div>
+
+    <div class="textArea" style="position:relative">
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text1">
+            <!-- About Section -->
+            <h2 class="w3-text-light-grey">Will Chartrand</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <a href=testingPage.html>test page</a>
+            <p>Hi I'm Will. If you're reading this, you probably already know me.
+                I stole this template from another website and am changing it to how I want it. Thanks for checking it
+                out!
+            </p>
+            <!--
   
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about"> <!-- padding-64 -->
@@ -80,79 +124,64 @@
     <p>Hi I'm Will. If you're reading this, you probably already know me. 
       I stole this template from another website and am changing it to how I want it. Thanks for checking it out!
     </p>
-    <!--
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Memes</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    -->
-    
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">11+</span><br>
-        BEANS
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">55+</span><br>
-        BEANS EATEN
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">89+</span><br>
-        poopies made
-      </div>
-      <div class="w3-quarter w3-section">
-        <span class="w3-xlarge">~3</span><br>
-        braine cells
-      </div>
-    </div>
 
-        <button class="w3-button w3-light-grey w3-padding-large w3-section">
-            <i class="fa fa-download"></i> Download Resume
-        </button>
-
-        <!-- Grid for pricing tables -->
-        <h3 class="w3-padding-16 w3-text-light-grey">Services</h3>
-        <div class="w3-row-padding" style="margin:0 -16px">
-            <div class="w3-half w3-margin-bottom">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                    <li class="w3-padding-16">A video of me giving you a random fact</li>
-                    <li class="w3-padding-16">
-                        <h2>$ 5</h2>
-                        <span class="w3-opacity">One time payment</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
-                    </li>
-                </ul>
+            <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">11+</span><br>
+                    BEANS
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">55+</span><br>
+                    BEANS EATEN pog
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">89+</span><br>
+                    poopies made
+                </div>
+                <div class="w3-quarter w3-section">
+                    <span class="w3-xlarge">~3</span><br>
+                    braine cells
+                </div>
             </div>
 
-            <div class="w3-half">
-                <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                    <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                    <li class="w3-padding-16">Short coding video</li>
-                    <li class="w3-padding-16">
-                        <h2>$ 15</h2>
-                        <span class="w3-opacity">One time payment</span>
-                    </li>
-                    <li class="w3-light-grey w3-padding-24">
-                        <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
-                    </li>
-                </ul>
-            </div>
-            <!-- End Grid/Pricing tables -->
-        </div>
+            <button class="w3-button w3-light-grey w3-padding-large w3-section">
+                <i class="fa fa-download"></i> Download Resume
+            </button>
 
-        <!-- Testimonials
+            <!-- Grid for pricing tables -->
+            <h3 class="w3-padding-16 w3-text-light-grey">Services</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                        <li class="w3-padding-16">A video of me giving you a random fact</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 5</h2>
+                            <span class="w3-opacity">One time payment</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+                        <li class="w3-padding-16">Short coding video</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 15</h2>
+                            <span class="w3-opacity">One time payment</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Grid/Pricing tables -->
+            </div>
+
+            <!-- Testimonials
         <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
         <img src="https://cdn140.picsart.com/235697139026212.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
         <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
@@ -162,7 +191,120 @@
         <p><span class="w3-large w3-margin-right">Dr. Phil</span> CEO of ur mom</p>
         <p>No one is better than philly boy</p>
         -->
-        <!-- End About Section -->
+            <!-- End About Section -->
+        </div>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text2">
+            <div id="container-3" style="position: relative">
+
+                <!--
+                <div class="classProjectWheel" id="projectWheel" style="display: none;">
+                    <div class="project1" id="projectID1"><i class="fa fa-user w3-xxxlarge"
+                            style="left: 6px; position: inherit;"></i></div>
+                    <div class="project2" id="projectID2"><i class="fa fa-book w3-xxxlarge"
+                            style="left: 6px; position: inherit;"></i></div>
+                    <div class="project3" id="projectID3"><i class="fa fa-envelope w3-xxxlarge"
+                            style="left:auto; position: inherit;"></i></div>
+                    <div class="project4" id="projectID4"></div>
+                    <div class="project5" id="projectID5"></div>
+                    <div class="project6" id="projectID6"></div>
+                    <div class="project7" id="projectID7"></div>
+                    <div class="project8" id="projectID8"></div>
+                </div>
+            </div>
+            -->
+                <!-- Portfolio Section -->
+                <div class="w3-padding-64 w3-content" id="projects_id">
+                    <h2 class="w3-text-white">Projects</h2>
+                    <!-- <hr style="width:200px" class="w3-opacity"> -->
+                    <!-- Grid for photos -->
+                    <div class="w3-row-padding" style="margin:0 -64px">
+                        <div class="w3-third">
+                            <a href="https://www.tiktok.com/@willyidk?lang=en" target="_blank"> <img
+                                    src="https://images.macrumors.com/t/HBigcx8ZDm2EGrjV1Sd2D-8p5qg=/1600x0/article-new/2020/08/tiktok-logo.jpg"
+                                    style="width:100%"></a>
+                        </div>
+
+                        <div class="w3-third">
+                            <a href="https://github.com/Will-chartrand" target="_blank"> <img
+                                    src="https://portswigger.net/cms/images/54/14/6efb9bc5d143-article-190612-github-body-text.jpg"
+                                    style="width:100%"></a>
+                        </div>
+
+                        <div class="w3-third">
+                            <a href="https://www.instagram.com/will_does.stuff/" target="_blank"> <img
+                                    src="https://i.pinimg.com/originals/0c/23/33/0c23332059f19519c291c00496b5f056.jpg"
+                                    style="width:100%"></a>
+                        </div>
+
+                        <!-- End photo grid -->
+                    </div>
+                    <!-- End Portfolio Section -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text3">
+
+            <!-- Contact Section -->
+            <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+                <h2 class="w3-text-light-grey">Contact Me</h2>
+                <hr style="width:200px" class="w3-opacity">
+
+                <div class="w3-section">
+                    <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Ontario
+                        Canada
+                    </p>
+                    <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +69 420
+                        69666
+                    </p>
+                    <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
+                        willchartrand@gmail.com</p>
+                </div><br>
+                <p>pls don't talk to me</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
+                    </p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
+                    </p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject">
+                    </p>
+                    <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message">
+                    </p>
+                    <p>
+                        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+                            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                        </button>
+                    </p>
+                </form>
+                <!-- End Contact Section -->
+
+            </div>
+        </div>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text4">
+            <i class="fa fa-facebook-official w3-xxxlarge w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-xxxlarge w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-xxxlarge w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-xxxlarge w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-xxxlarge w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-xxxlarge w3-hover-opacity"></i>
+        </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text5">
+            text slot 5
+        </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text6">
+            text slot 6
+        </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text7">
+            text slot 7
+        </div>
+        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text8">
+            text slot 8
+        </div>
+        <script>hideAllTexts();</script>
     </div>
 
     <!-- Footer -->
@@ -173,12 +315,15 @@
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
         <!-- End footer -->
     </footer>
-
     <!-- END PAGE CONTENT -->
     </div>
 
 </body>
+
+<script>update();</script>
+
 </html>

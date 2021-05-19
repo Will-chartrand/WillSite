@@ -1,0 +1,337 @@
+html,
+body {
+    height          : 100%;
+    min-height      : 100%;
+    background-color: #000000;
+}
+
+#about {
+    position  : absolute;
+    top       : 1000px;
+    left      : 300px;
+    transition: transform 0.7s linear;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+footer {
+    position: absolute;
+
+    top: 1000px;
+    right: 100px;
+}
+
+.dot1 {
+    position     : absolute;
+    top          : -25px;
+    /* -child size/2 */
+    left         : 75px;
+    /* parent size/2 - child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    /*background-image:url('potato.jpg');*/
+    object-fit: contain;
+}
+
+.dot1.active {
+    transform: scale(1.5);
+}
+
+.dot2 {
+    position     : absolute;
+    top          : 175px;
+    /* parent size/2 - child size/2 */
+    left         : 75px;
+    /* -child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    border-radius: 30%;
+
+}
+
+.dot3 {
+    position     : absolute;
+    top          : 75px;
+    left         : 175px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    border-radius: 30%;
+
+}
+
+.dot4 {
+    position     : absolute;
+    top          : 75px;
+    /* -child size/2 */
+    left         : -25px;
+    /* parent size/2 - child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    border-radius: 30%;
+
+}
+
+.dot5 {
+    position     : absolute;
+    top          : 0px;
+    left         : 0px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : #656565;
+    border-radius: 30%;
+
+}
+
+.dot6 {
+    position     : absolute;
+    top          : 0px;
+    left         : 150px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : #656565;
+    border-radius: 30%;
+
+}
+
+.dot7 {
+    position     : absolute;
+    top          : 150px;
+    left         : 0px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : #656565;
+    border-radius: 30%;
+
+}
+
+.dot8 {
+    position     : absolute;
+    top          : 150px;
+    left         : 150px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : #656565;
+    border-radius: 30%;
+
+}
+
+.dot1:hover,
+.dot2:hover,
+.dot3:hover,
+.dot4:hover,
+.dot5:hover,
+.dot6:hover,
+.dot7:hover,
+.dot8:hover {
+    transform: scale(1.2);
+}
+
+.sun {
+    width                            : 200px;
+    height                           : 200px;
+    position                         : relative;
+
+    background   : rgb(37, 37, 36);
+    border-radius: 50%;
+
+    transform : rotate(0deg);
+    transition: transform 0.7s linear;
+    top       : 100px;
+    margin     :auto
+}
+
+
+.rotated {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition   : all 0.5s ease-in-out;
+    -o-transition     : all 0.5s ease-in-out;
+    transition        : all 0.5s ease-in-out;
+
+    transform        : rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform   : rotate(360deg);
+    -o-transform     : rotate(360deg);
+}
+
+#Text1,
+#Text2,
+#Text3,
+#Text4,
+#Text5,
+#Text6,
+#Text7,
+#Text8
+ {
+    position: absolute;
+    width: 500px;
+    height: 200px;
+    top     : 150px;
+    left    : 400px;
+    width   : 100%;
+    display : none;
+}
+
+.project1 {
+    position     : absolute;
+    top          : -25px;
+    /* -child size/2 */
+    left         : 75px;
+    /* parent size/2 - child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    /*background-image:url('potato.jpg');*/
+    object-fit: contain;
+}
+
+.project2 {
+    position     : absolute;
+    top          : 175px;
+    /* parent size/2 - child size/2 */
+    left         : 75px;
+    /* -child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    border-radius: 30%;
+
+}
+
+.project3 {
+    position     : absolute;
+    top          : 75px;
+    left         : 175px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(255, 255, 255);
+    border-radius: 30%;
+
+}
+
+.project4 {
+    position     : absolute;
+    top          : 75px;
+    /* -child size/2 */
+    left         : -25px;
+    /* parent size/2 - child size/2 */
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(128, 74, 214);
+    border-radius: 30%;
+
+}
+
+.project5 {
+    position     : absolute;
+    top          : 0px;
+    left         : 0px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(0, 128, 68);
+    border-radius: 30%;
+
+}
+
+.project6 {
+    position     : absolute;
+    top          : 0px;
+    left         : 150px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(139, 139, 139);
+    border-radius: 30%;
+
+}
+
+.project7 {
+    position     : absolute;
+    top          : 150px;
+    left         : 0px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(0, 255, 170);
+    border-radius: 30%;
+
+}
+
+.project8 {
+    position     : absolute;
+    top          : 150px;
+    left         : 150px;
+    width        : 50px;
+    height       : 50px;
+    transform    : rotate(0deg);
+    transition   : transform 0.7s linear;
+    background   : rgb(204, 96, 96);
+    border-radius: 30%;
+
+}
+
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover,
+.project6:hover,
+.project7:hover,
+.project8:hover {
+    transform: scale(1.2);
+}
+
+.classProjectWheel {
+    width                            : 200px;
+    height                           : 200px;
+    position                         : relative;
+
+    background   : rgb(37, 37, 36);
+    border-radius: 50%;
+
+    transform : rotate(0deg);
+    transition: transform 0.7s linear;
+    top       : 100px;
+    left      : 100px;
+}
+
+@keyframes pulse {
+    from {
+        transform : translateY(0px);
+        opacity   : 1;
+    }
+    50% {
+        transform : scale(0.75);
+    }
+    to {
+        transform : translateY(-50px);
+        transform: scale(1);
+    }
+}
