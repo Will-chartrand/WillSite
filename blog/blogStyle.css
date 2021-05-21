@@ -1,73 +1,115 @@
 body {
-    font-family: Arial;
-    padding: 20px;
-    background: #f1f1f1;
-  }
+  font-family: myFirstFont;
+  padding    : 20px;
+  background : #f1f1f1;
+}
 
-  @font-face {
-    font-family: 'Times New Roman', Times, serif;
-    src: url(sansation_light.woff);
-  }
+ul {
+  list-style-type : none;
+  margin          : 0;
+  padding         : 0;
+  overflow        : hidden;
+  background-color: #4f4a41;
+}
+
+li {
+  float  : right;
+  display: inline;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  transition: background-color 0.5s ease-in-out;
+  background-color: #6e6658;
+}
+
+@font-face {
+  font-family: 'Times New Roman', Times, serif;
+  src        : url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
+}
+
+h5 {
+  position: absolute;
+  color: white;
+  bottom: 0;
+}
+
+/* Header/Blog Title */
+.header {
+  padding   : 30px;
+  font-size : 40px;
+  text-align: center;
+  background: #88BDBC;
+  background: radial-gradient(circle, rgba(213, 237, 237, 1) 0%, rgba(136, 189, 188, 1) 100%);
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float       : right;
+  width       : 100%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width           : 100%;
+  padding         : 0px;
+}
+
+/* Add a card effect for articles */
+.card {
   
-  div {
-    font-family: myFirstFont;
-  }
-  
-  /* Header/Blog Title */
-  .header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background: #88BDBC;
-    background: radial-gradient(circle, rgba(213,237,237,1) 0%, rgba(136,189,188,1) 100%);   }
-  
-  /* Create two unequal columns that floats next to each other */
-  /* Left column */
-  .leftcolumn {
-    float: left;
-    width: 75%;
-  }
-  
-  /* Right column */
+  position: relative;
+  width: 320;
+  height: 320;
+  padding: 35px;
+
+  background-size: cover;
+
+  min-width: 320px;
+  min-height: 320px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear  : both;
+}
+
+/* Footer */
+.footer {
+  padding   : 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+  .leftcolumn,
   .rightcolumn {
-    float: left;
-    width: 25%;
-    padding-left: 20px;
+    width  : 100%;
+    padding: 0;
   }
-  
-  /* Fake image */
-  .fakeimg {
-    background-color: #aaa;
-    width: 100%;
-    padding: 20px;
-  }
-  
-  /* Add a card effect for articles */
-  .card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Footer */
-  .footer {
-    padding: 20px;
-    text-align: center;
-    background: #ddd;
-    margin-top: 20px;
-  }
-  
-  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-      width: 100%;
-      padding: 0;
-    }
-  }
+}
