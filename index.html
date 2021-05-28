@@ -50,29 +50,50 @@
 <body onload="startSite();" class="w3-black">
 
     <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+    <nav style="left: 50%;" class="ul w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
-        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/515/694/3b5.jpg" style="width:100%">
-        <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-darkgrey w3-hover-black">
-            <i class="fa fa-home w3-xxlarge"></i>
-            <p>Home</p>
-        </a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-user w3-xxlarge"></i>
-            <p>About</p>
-        </a>
-        <a href="memes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-eye w3-xxlarge"></i>
-            <p>Photos</p>
-        </a>
-        <a href="projects.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-book w3-xxlarge"></i>
-            <p>Projects</p>
-        </a>
-        <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-            <i class="fa fa-envelope w3-xxlarge"></i>
-            <p>Contact</p>
-        </a>
+        
+        <li id="contact">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p>Contact</p>
+            </a>
+        </li>
+        
+        <li id="projects">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-book w3-xxlarge"></i>
+                <p>Projects</p>
+            </a>
+        </li>
+        
+        <li id="photos">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-eye w3-xxlarge"></i>
+                <p>Photos</p>
+            </a>
+        </li>
+        
+        <li id="about">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>About</p>
+            </a>
+        </li>
+        
+        <li id="blog">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white" href="blog/blog.html">
+                <i class="fa fa-file-text w3-xxlarge"></i>
+                <p>Blog</p>
+            </a>
+        </li>
+        
+        <li id="home">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a>
+        </li>
     </nav>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
@@ -99,7 +120,7 @@
             <a href="blog/blog.html">
                 <div class="dot5" id="dotID5" h><i class="fa fa-file-text w3-xxxlarge" style="left:6px; position: relative;"></i></div>
             </a>
-            <div class="dot6" id="dotID6"></div>
+            <div class="dot6" id="dotID6"><i class="fa fa-eye w3-xxxlarge" style="left:6px; position: relative;"></i></div>
             <div class="dot7" id="dotID7"></div>
             <div class="dot8" id="dotID8"></div>
         </div>
@@ -299,10 +320,37 @@
             <i class="fa fa-linkedin w3-xxxlarge w3-hover-opacity"></i>
         </div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text5">
-            text slot 5
+            Blog
         </div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text6">
-            text slot 6
+            <div class="w3-padding-64 w3-content" id="photos">
+                <h2 class="w3-text-black">MEME MEME MEME MEME MEME MEME MEME MEME MEME</h2>
+               <!-- <hr style="width:200px" class="w3-opacity"> -->
+            
+                <!-- Grid for photos -->
+                <div class="w3-row-padding" style="margin:0 -64px">
+                  <div class="w3-third">
+                    <img src="https://pbs.twimg.com/profile_images/949787136030539782/LnRrYf6e.jpg" style="width:100%">
+                    <img src="https://www.dictionary.com/e/wp-content/uploads/2020/01/Dank_800x800-300x300.jpg" style="width:100%">
+                    <img src="https://i.redd.it/8kt5cz8p1od11.jpg" style="width:100%">
+                  </div>
+            
+                  <div class="w3-third">
+                    <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/12/funny-weird-wtf-stock-photos-19-5a3926af95d9d__700.jpg" style="width:100%">
+                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-10/2/18/campaign_images/buzzfeed-prod-web-06/15-of-the-weirdest-and-darkest-stock-photos-that--2-21628-1538520564-0_dblbig.jpg" style="width:100%">
+                    <img src="https://i.ytimg.com/vi/vhl9wWLv2Yo/maxresdefault.jpg" style="width:100%">
+                  </div>
+                    
+                  <div class="w3-third">
+                    <img src="https://static.boredpanda.com/blog/wp-content/uploads/2017/12/funny-weird-wtf-stock-photos-19-5a3926af95d9d__700.jpg" style="width:100%">
+                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2018-10/2/18/campaign_images/buzzfeed-prod-web-06/15-of-the-weirdest-and-darkest-stock-photos-that--2-21628-1538520564-0_dblbig.jpg" style="width:100%">
+                    <img src="https://i.ytimg.com/vi/vhl9wWLv2Yo/maxresdefault.jpg" style="width:100%">
+                  </div>
+                    
+                <!-- End photo grid -->
+                </div>
+              <!-- End Portfolio Section -->
+              </div>
         </div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text7">
             text slot 7

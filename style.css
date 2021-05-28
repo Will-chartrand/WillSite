@@ -5,36 +5,55 @@ body {
     background-color: #000000;
 }
 
-#about {
-    position  : absolute;
-    top       : 1000px;
-    left      : 300px;
-    transition: transform 0.7s linear;
-}
-
 div {
     box-sizing: border-box;
+}
+
+ul {
+    list-style-type : none;
+    margin          : 0;
+    padding         : 0;
+    overflow        : hidden;
+    background-color: #4f4a41;
+}
+
+li {
+    float: right;
+    display: inline;
+}
+
+li a {
+    display        : block;
+    color          : white;
+    text-align     : center;
+    padding        : 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    transition      : background-color 0.5s ease-in-out;
+    background-color: #6e6658;
 }
 
 footer {
     position: absolute;
 
-    top: 1000px;
+    top  : 1000px;
     right: 100px;
 }
 
 .dot1 {
-    position     : absolute;
-    top          : -25px;
+    position          : absolute;
+    top               : -25px;
     /* -child size/2 */
-    left         : 75px;
+    left              : 75px;
     /* parent size/2 - child size/2 */
-    width        : 50px;
-    height       : 50px;
-    transform    : rotate(0deg);
-    transition   : transform 0.7s linear;
+    width             : 50px;
+    height            : 50px;
+    transform         : rotate(0deg);
+    transition        : transform 0.7s linear;
     /*background-image:url('potato.jpg');*/
-    object-fit: contain;
+    object-fit        : contain;
 }
 
 .dot1.active {
@@ -101,7 +120,6 @@ footer {
     height       : 50px;
     transform    : rotate(0deg);
     transition   : transform 0.7s linear;
-    background   : #656565;
     border-radius: 30%;
 
 }
@@ -144,9 +162,9 @@ footer {
 }
 
 .sun {
-    width                            : 200px;
-    height                           : 200px;
-    position                         : relative;
+    width   : 200px;
+    height  : 200px;
+    position: relative;
 
     background   : rgb(37, 37, 36);
     border-radius: 50%;
@@ -154,7 +172,7 @@ footer {
     transform : rotate(0deg);
     transition: transform 0.7s linear;
     top       : 100px;
-    margin     :auto
+    margin    : auto
 }
 
 
@@ -177,11 +195,10 @@ footer {
 #Text5,
 #Text6,
 #Text7,
-#Text8
- {
+#Text8 {
     position: absolute;
-    width: 500px;
-    height: 200px;
+    width   : 500px;
+    height  : 200px;
     top     : 150px;
     left    : 400px;
     width   : 100%;
@@ -189,17 +206,17 @@ footer {
 }
 
 .project1 {
-    position     : absolute;
-    top          : -25px;
+    position          : absolute;
+    top               : -25px;
     /* -child size/2 */
-    left         : 75px;
+    left              : 75px;
     /* parent size/2 - child size/2 */
-    width        : 50px;
-    height       : 50px;
-    transform    : rotate(0deg);
-    transition   : transform 0.7s linear;
+    width             : 50px;
+    height            : 50px;
+    transform         : rotate(0deg);
+    transition        : transform 0.7s linear;
     /*background-image:url('potato.jpg');*/
-    object-fit: contain;
+    object-fit        : contain;
 }
 
 .project2 {
@@ -308,9 +325,9 @@ footer {
 }
 
 .classProjectWheel {
-    width                            : 200px;
-    height                           : 200px;
-    position                         : relative;
+    width   : 200px;
+    height  : 200px;
+    position: relative;
 
     background   : rgb(37, 37, 36);
     border-radius: 50%;
@@ -323,14 +340,16 @@ footer {
 
 @keyframes pulse {
     from {
-        transform : translateY(0px);
-        opacity   : 1;
+        transform: translateY(0px);
+        opacity  : 1;
     }
+
     50% {
-        transform : scale(0.75);
+        transform: scale(0.75);
     }
+
     to {
-        transform : translateY(-50px);
+        transform: translateY(-50px);
         transform: scale(1);
     }
 }

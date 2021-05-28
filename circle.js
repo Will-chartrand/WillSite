@@ -10,6 +10,15 @@ var i = 0;
 
 
 function update() {
+clickDot('#home', '#Text1', '#sunID', 180);
+clickDot('#projects', '#Text2', '#sunID', 0);
+clickDot('#contact', '#Text3', '#sunID', 90);
+clickDot('#about', '#Text4', '#sunID', 270);
+clickDot('#blog', '#Text5', '#sunID', 180+45);
+clickDot('#photos', '#Text6', '#sunID', 180-45);
+clickDot('.dot7', '#Text7', '#sunID', 315);
+clickDot('.dot8', '#Text8', '#sunID', 45);
+
 clickDot('.dot1', '#Text1', '#sunID', 180);
 clickDot('.dot2', '#Text2', '#sunID', 0);
 clickDot('.dot3', '#Text3', '#sunID', 90);
@@ -18,13 +27,6 @@ clickDot('.dot5', '#Text5', '#sunID', 180+45);
 clickDot('.dot6', '#Text6', '#sunID', 180-45);
 clickDot('.dot7', '#Text7', '#sunID', 315);
 clickDot('.dot8', '#Text8', '#sunID', 45);
-
-$( '.dot1' ).hover(
-	function() {
-	  $( this ).toggleClass( "active");
-	  $( this ).css({transform: scale(1.2)});
-	}
-  );
 
 /*
 if($('#Text2').is(":visible")) {
