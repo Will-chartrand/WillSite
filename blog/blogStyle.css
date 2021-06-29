@@ -55,6 +55,9 @@ h5 {
   background: radial-gradient(circle, rgba(213, 237, 237, 1) 0%, rgba(136, 189, 188, 1) 100%);
 }
 
+.main {
+  display: inline-block;
+}
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
@@ -85,13 +88,12 @@ h5 {
   
   position: relative;
   display: inline-block;
-
   padding: 35px;
 
   background-size: cover;
 
-  min-width: 320px;
-  min-height: 320px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 /* Clear floats after the columns */

@@ -7,6 +7,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+ <!-- jQuery library -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <!-- Latest compiled JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
 <link rel="stylesheet" href="style.css">
 <script src="circle.js"></script>
 </script>
@@ -54,21 +64,21 @@
         <!-- Avatar image in top left corner -->
         
         <li id="contact">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+            <a href="#Text3" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-envelope w3-xxlarge"></i>
                 <p>Contact</p>
             </a>
         </li>
         
         <li id="photos">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+            <a href="#Text6" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-eye w3-xxlarge"></i>
                 <p>Photos</p>
             </a>
         </li>
         
         <li id="projects">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+            <a href="#Text2" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-book w3-xxlarge"></i>
                 <p>Projects</p>
             </a>
@@ -76,7 +86,7 @@
         
         
         <li id="about">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+            <a href="#Text4" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-user w3-xxlarge"></i>
                 <p>About</p>
             </a>
@@ -90,8 +100,15 @@
         </li>
         
         <li id="home">
-            <a class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+            <a href="#Text1" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-home w3-xxlarge"></i>
+                <p>Home</p>
+            </a>
+        </li>
+
+        <li id="music">
+            <a href="#Text8" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <i class="fa fa-music w3-xxlarge"></i>
                 <p>Home</p>
             </a>
         </li>
@@ -105,6 +122,7 @@
             <a href="memes.html" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
             <a href="projects.html" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
             <a href="contact.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+            <a href="music.html" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
         </div>
     </div>
 
@@ -123,7 +141,7 @@
             </a>
             <div class="dot6" id="dotID6"><i class="fa fa-eye w3-xxxlarge" style="left:6px; position: relative;"></i></div>
             <div class="dot7" id="dotID7"></div>
-            <div class="dot8" id="dotID8"></div>
+            <div class="dot8" id="dotID8"><i class="fa fa-music w3-xxxlarge" style="left:6px; position: relative;"></i></div>
         </div>
     </div>
 
@@ -357,7 +375,7 @@
             text slot 7
         </div>
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text8">
-            text slot 8
+            <iframe src="https://open.spotify.com/embed/album/0G7m33seZhMkGSSXNVYD4I?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
         <script>hideAllTexts();</script>
     </div>
