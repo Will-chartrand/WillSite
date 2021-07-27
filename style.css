@@ -25,15 +25,16 @@ li {
 
 li a {
     display        : block;
-    color          : white;
+    color          : none;
     text-align     : center;
     padding        : 14px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-    transition      : background-color 0.5s ease-in-out;
-    background-color: #6e6658;
+    background-color: transparent;
+    /*transition      : background-color 0.5s ease-in-out;*/
+    /*background-color: #6e6658;*/
 }
 
 footer {
@@ -197,11 +198,8 @@ footer {
 #Text7,
 #Text8 {
     position: absolute;
-    width   : 500px;
-    height  : 200px;
-    top     : 150px;
-    left    : 400px;
-    width   : 100%;
+    top     : 50px;
+    width   : 90%;
     display : none;
 }
 

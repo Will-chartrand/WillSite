@@ -17,7 +17,15 @@ clickDot('#about', '#Text4', '#sunID', 270);
 clickDot('#blog', '#Text5', '#sunID', 180+45);
 clickDot('#photos', '#Text6', '#sunID', 180-45);
 clickDot('.dot7', '#Text7', '#sunID', 315);
-clickDot('.dot8', '#Text8', '#sunID', 45);
+clickDot('#music', '#Text8', '#sunID', 45);
+
+clickDot('#homeSm', '#Text1', '#sunID', 180);
+clickDot('#projectsSm', '#Text2', '#sunID', 0);
+clickDot('#contactSm', '#Text3', '#sunID', 90);
+clickDot('#aboutSm', '#Text4', '#sunID', 270);
+clickDot('#photosSm', '#Text6', '#sunID', 180-45);
+clickDot('.dot7', '#Text7', '#sunID', 315);
+clickDot('#musicSm', '#Text8', '#sunID', 45);
 
 clickDot('.dot1', '#Text1', '#sunID', 180);
 clickDot('.dot2', '#Text2', '#sunID', 0);
