@@ -172,7 +172,7 @@ footer {
 
     transform : rotate(0deg);
     transition: transform 0.7s linear;
-    top       : 100px;
+    top       : 120px;
     margin    : auto
 }
 
