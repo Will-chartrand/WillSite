@@ -5,21 +5,21 @@
     <nav style="left: 50%;" class="ul w3-bar-block w3-small w3-hide-small w3-center">
         <!-- Avatar image in top left corner -->
 
-        <li id="contact">
+        <li id="navContact" onclick="clickDot('#navContact', '#Text3', '#sunID', 90);">
             <a href="#Text3" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-envelope w3-xxlarge"></i>
                 <p>Contact</p>
             </a>
         </li>
 
-        <li id="photos">
+        <li id="navPhotos" onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-45);">
             <a href="#Text6" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-eye w3-xxlarge"></i>
                 <p>Photos</p>
             </a>
         </li>
 
-        <li id="projects">
+        <li id="navProjects" onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">
             <a href="#Text2" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-book w3-xxlarge"></i>
                 <p>Projects</p>
@@ -27,7 +27,7 @@
         </li>
 
 
-        <li id="about">
+        <li id="navAbout" onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">
             <a href="#Text4" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-user w3-xxlarge"></i>
                 <p>About</p>
@@ -43,14 +43,14 @@
             </li>
         -->
 
-        <li id="music">
+        <li id="navMusic" onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">
             <a href="#Text8" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-music w3-xxlarge"></i>
                 <p>Music</p>
             </a>
         </li>
 
-        <li id="home">
+        <li id="navHome" onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">
             <a href="#Text1" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
                 <i class="fa fa-home w3-xxlarge"></i>
                 <p>Home</p>
@@ -59,4 +59,5 @@
 
     </nav>
 </body>
+<script>navUpdate();</script>
 </html>
