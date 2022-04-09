@@ -24,7 +24,6 @@ function hideAllTexts() {
 	}
 }
 function rotateCircle(rotateBy) {
-
 	currentRotation = getRotationDegrees($('.sun'));
 	if(currentRotation%360 != rotateBy) {
 		$("#sunID").css( { transform: 'rotate('+rotateBy+'deg)'});

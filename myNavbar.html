@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
 <body>
-    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+
+    <!-- Simulate a smartphone / tablet -->
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
         <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
             onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
-        <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
-        <a id="photosSm" href="#Text6" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-45);">PHOTOS</a>
-        <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
-        <a id="contactSm" href="#Text3" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
-        <a id="codeSm" href="#Text7" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
-            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+        <div id="myLinks" class="container-fluid">
+            <div class="container">
+                <div class="row" style="display: flex;">
+                        <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button" style="width: 30%;"
+                            onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+                        <a id="photosSm" href="#Text6" class="w3-bar-item w3-button" style="width: 30%;"
+                            onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
+                        <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button" style="width: 30%;"
+                            onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+                </div>
+            </div>
+            <div class="row" style="display: flex;">
+
+                <div class="col-md-8" style="width: 30%;">
+                    <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
+                        onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+                </div>
+                <div class="col-md-8" style="width: 30%;">
+                    <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
+                        onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+                </div>
+                <div class="col-md-8" style="width: 30%;">
+                    <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
+                        onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+    
+                </div>
+            </div>
+        </div>
     </div>
+    </div>
+    <!-- End smartphone / tablet look -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+
+
 </body>
 
 </html>
