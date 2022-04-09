@@ -8,10 +8,6 @@ var _CURRENT_ANGLE = 0;
 var currentRotation = 0;
 var i = 0;
 
-function navUpdate() {/*
-	// clickDot('.dot7', '#Text7', '#sunID', 315);
-	*/
-}
 
 function clickDot(obj, textObj, circleObj, _rotateBy) {
 	 	//$(obj).on('click', function() {

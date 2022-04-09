@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a id="photosSm" href="#Text6" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-            <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-            <a id="contactSm" href="#Text3" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button" style="width:25% !important">MUSIC</a>
-        </div>
-    </body>
+
+<body>
+    <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+        <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
+        <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+        <a id="photosSm" href="#Text6" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-45);">PHOTOS</a>
+        <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+        <a id="contactSm" href="#Text3" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+        <a id="codeSm" href="#Text7" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+    </div>
+</body>
+
 </html>
