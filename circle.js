@@ -10,53 +10,28 @@ var i = 0;
 
 
 function update() {
-clickDot('#home', '#Text1', '#sunID', 180);
-clickDot('#projects', '#Text2', '#sunID', 0);
-clickDot('#contact', '#Text3', '#sunID', 90);
-clickDot('#about', '#Text4', '#sunID', 270);
-clickDot('#blog', '#Text5', '#sunID', 180+45);
-clickDot('#photos', '#Text6', '#sunID', 180-45);
-clickDot('.dot7', '#Text7', '#sunID', 315);
-clickDot('#music', '#Text8', '#sunID', 45);
+	clickDot('#homeSm', '#Text1', '#sunID', 180);
+	clickDot('#projectsSm', '#Text2', '#sunID', 0);
+	clickDot('#contactSm', '#Text3', '#sunID', 90);
+	clickDot('#aboutSm', '#Text4', '#sunID', 270);
+	clickDot('#photosSm', '#Text6', '#sunID', 180-45);
+	clickDot('.dot7', '#Text7', '#sunID', 315);
+	clickDot('#musicSm', '#Text8', '#sunID', 45);
 
-clickDot('#homeSm', '#Text1', '#sunID', 180);
-clickDot('#projectsSm', '#Text2', '#sunID', 0);
-clickDot('#contactSm', '#Text3', '#sunID', 90);
-clickDot('#aboutSm', '#Text4', '#sunID', 270);
-clickDot('#photosSm', '#Text6', '#sunID', 180-45);
-clickDot('.dot7', '#Text7', '#sunID', 315);
-clickDot('#musicSm', '#Text8', '#sunID', 45);
-
-clickDot('.dot1', '#Text1', '#sunID', 180);
-clickDot('.dot2', '#Text2', '#sunID', 0);
-clickDot('.dot3', '#Text3', '#sunID', 90);
-clickDot('.dot4', '#Text4', '#sunID', 270);
-clickDot('.dot5', '#Text5', '#sunID', 180+45);
-clickDot('.dot6', '#Text6', '#sunID', 180-45);
-clickDot('.dot7', '#Text7', '#sunID', 315);
-clickDot('.dot8', '#Text8', '#sunID', 45);
-
-/*
-if($('#Text2').is(":visible")) {
-	clickDot('.project1', '#projectID1', '#projectWheel', 180);
-	clickDot('.project2', '#projectID2', '#projectWheel', 0);
-	clickDot('.project3', '#projectID3', '#projectWheel', 90);
-	clickDot('.project4', '#projectID4', '#projectWheel', 270);
-	clickDot('.project5', '#projectID5', '#projectWheel', 180+45);
-	clickDot('.project6', '#projectID6', '#projectWheel', 180-45);
-	clickDot('.project7', '#projectID7', '#projectWheel', 360-45);
-	clickDot('.project8', '#projectID8', '#projectWheel', 45);
-}*/
+	clickDot('.dot1', '#Text1', '#sunID', 180);
+	clickDot('.dot2', '#Text2', '#sunID', 0);
+	clickDot('.dot3', '#Text3', '#sunID', 90);
+	clickDot('.dot4', '#Text4', '#sunID', 270);
+	clickDot('.dot5', '#Text5', '#sunID', 180+45);
+	clickDot('.dot6', '#Text6', '#sunID', 180-45);
+	clickDot('.dot7', '#Text7', '#sunID', 315);
+	clickDot('.dot8', '#Text8', '#sunID', 45);
 }
 
 function clickDot(obj, textObj, circleObj, _rotateBy) {
 	$(obj).on('click', function() {
 		hideAllTexts();
-		/*if(circleObj == '#projectWheel') {
-			rotateProjectWheel(_rotateBy);
-		} else {*/
-			rotateCircle(_rotateBy);
-		//}
+		rotateCircle(_rotateBy);
 		if($(textObj).is(":visible")) {
 			$(textObj).hide(500);
 		} else {
@@ -75,9 +50,7 @@ function hideAllTexts() {
 function rotateCircle(rotateBy) {
 
 	currentRotation = getRotationDegrees($('.sun'));
-	//alert(currentRotation%360+" "+rotateBy);
 	if(currentRotation%360 != rotateBy) {
-		//alert(currentRotation+" "+rotateBy)
 		$("#sunID").css( { transform: 'rotate('+rotateBy+'deg)'});
 			$("#dotID1").css({ transform: 'rotate(-'+rotateBy+'deg)'});
 			$("#dotID2").css({ transform: 'rotate(-'+rotateBy+'deg)'});

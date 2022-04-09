@@ -25,78 +25,25 @@
 
     <img src="https://instagram.fxds1-1.fna.fbcdn.net/v/t51.2885-19/s320x320/220876855_120407436967008_8240100420759880214_n.jpg?_nc_ht=instagram.fxds1-1.fna.fbcdn.net&_nc_ohc=JUo1_dpvFH0AX83ZP6G&edm=ABfd0MgBAAAA&ccb=7-4&oh=dd0fd672207fd5cd3eda2e23cd5fa21b&oe=610E4427&_nc_sid=7bff83" alt="E" style="display: none;">
 
+
+    <script src="jquery.js"></script> 
+    <script> 
+    $(function(){
+        $("#projects_id").load("projects.html"); 
+        $("#myNavbar").load("myNavbar.html"); 
+        $("#navbar").load("navbar.html"); 
+        $("#socials").load("socials.html"); 
+    });
+    </script> 
+
 </head>
 
 <body onload="startSite();" class="w3-black">
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav style="left: 50%;" class="ul w3-bar-block w3-small w3-hide-small w3-center">
-        <!-- Avatar image in top left corner -->
-
-        <li id="contact">
-            <a href="#Text3" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-envelope w3-xxlarge"></i>
-                <p>Contact</p>
-            </a>
-        </li>
-
-        <li id="photos">
-            <a href="#Text6" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-eye w3-xxlarge"></i>
-                <p>Photos</p>
-            </a>
-        </li>
-
-        <li id="projects">
-            <a href="#Text2" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-book w3-xxlarge"></i>
-                <p>Projects</p>
-            </a>
-        </li>
-
-
-        <li id="about">
-            <a href="#Text4" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-user w3-xxlarge"></i>
-                <p>About</p>
-            </a>
-        </li>
-
-        <!--
-            <li id="blog">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hover-white" href="blog/blog.html">
-                    <i class="fa fa-file-text w3-xxlarge"></i>
-                    <p>Blog</p>
-                </a>
-            </li>
-        -->
-
-        <li id="music">
-            <a href="#Text8" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-music w3-xxlarge"></i>
-                <p>Music</p>
-            </a>
-        </li>
-
-        <li id="home">
-            <a href="#Text1" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
-                <i class="fa fa-home w3-xxlarge"></i>
-                <p>Home</p>
-            </a>
-        </li>
-
-    </nav>
+    <div id="navbar"></div>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-            <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-            <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-            <a id="photosSm" href="#Text6" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
-            <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-            <a id="contactSm" href="#Text3" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button" style="width:25% !important">MUSIC</a>
-        </div>
     </div>
 
     <!--<img src="websitebanner.jpg" alt="header image" /> -->
@@ -170,133 +117,27 @@
             <hr style="width: 75%" class="w3-opacity">
             <a href=testingPage.html>test page</a>
             <p class="w3-text-light-grey">Hi I'm Will <br><br>
-                I'm going into my first year at CarletonU for comp sci which is pretty cool
+                I'm currently in my first year at Carleton University for Computer Science
                 <br>
-                If you want to contact me, please don't click the contact button, I don't check my email. Also I haven't gotten it to work yet but that's besides the point. <br> <br>
                 My instagram is @will._chartrand and you can find the rest of my socials under the about section <br> <br>
                 Thanks for checking out this site, if you're on desktop you can see the wheel in the middle of the screen. That took me way too many hours to make, and it's not perfect, but I am proud.
                 <br>
                 <br>
-                XX This is a test to see if I can push to the repo. XX
-
             </p>
-            <!--
-    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
-    </div>
-    <p class="w3-wide">Memes</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
-    </div>
-    <p class="w3-wide">Photoshop</p>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
-    </div><br>
-    -->
-
-    <!--
-        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">11+</span><br>
-                BEANS
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">55+</span><br>
-                BEANS EATEN pog
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">89+</span><br>
-                poopies made
-            </div>
-            <div class="w3-quarter w3-section">
-                <span class="w3-xlarge">~3</span><br>
-                braine cells
-            </div>
-        </div>
-    -->
-
+            
             <button class="w3-button w3-light-grey w3-padding-large w3-section">
                 <a href="/resume.pdf" target="_blank">
                     <i class="fa fa-download"></i> Download Resume
                 </a>
             </button>
-
-            <!-- Grid for pricing tables 
-            <h3 class="w3-padding-16 w3-text-light-grey">Services</h3>
-            <div class="w3-row-padding" style="margin:0 -16px">
-                <div class="w3-half w3-margin-bottom">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-                        <li class="w3-padding-16">A video of me giving you a random fact</li>
-                        <li class="w3-padding-16">
-                            <h2>$ 5</h2>
-                            <span class="w3-opacity">One time payment</span>
-                        </li>
-                        <li class="w3-light-grey w3-padding-24">
-                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="w3-half">
-                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-                        <li class="w3-padding-16">Short coding video</li>
-                        <li class="w3-padding-16">
-                            <h2>$ 15</h2>
-                            <span class="w3-opacity">One time payment</span>
-                        </li>
-                        <li class="w3-light-grey w3-padding-24">
-                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
-                        </li>
-                    </ul>
-                </div>
-                 End Grid/Pricing tables -->
+           
+                 <!-- End About Section -->
             </div>
 
-            <!-- Testimonials
-        <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
-        <img src="https://cdn140.picsart.com/235697139026212.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-        <p>John Doe saved us from a web disaster.</p><br>
-
-        <img src="https://www.mypokecard.com/en/Gallery/my/galery/ys8wcxtEKWQy.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <p><span class="w3-large w3-margin-right">Dr. Phil</span> CEO of ur mom</p>
-        <p>No one is better than philly boy</p>
-        -->
-            <!-- End About Section -->
         </div>
 
         <div class="container-fluid" id="Text2" style="position: relative; top: 10%;">
-                <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects_id">
-                    <h2 class="w3-text-white">Projects</h2>
-                    <!-- <hr style="width:200px" class="w3-opacity"> -->
-                    <!-- Grid for photos -->
-                    <div class="w3-row-padding" style="margin:0 -64px">
-                        <div class="w3-third">
-                            <a href="https://www.tiktok.com/@willyidk?lang=en" target="_blank"> <img
-                                    src="https://images.macrumors.com/t/HBigcx8ZDm2EGrjV1Sd2D-8p5qg=/1600x0/article-new/2020/08/tiktok-logo.jpg"
-                                    style="width:100%"></a>
-                        </div>
-
-                        <div class="w3-third">
-                            <a href="https://github.com/Will-chartrand" target="_blank"> <img
-                                    src="https://portswigger.net/cms/images/54/14/6efb9bc5d143-article-190612-github-body-text.jpg"
-                                    style="width:100%"></a>
-                        </div>
-
-                        <div class="w3-third">
-                            <a href="https://www.instagram.com/will_does.stuff/" target="_blank"> <img
-                                    src="https://i.pinimg.com/originals/0c/23/33/0c23332059f19519c291c00496b5f056.jpg"
-                                    style="width:100%"></a>
-                        </div>
-
-                        <!-- End photo grid -->
-                    </div>
-                    <!-- End Portfolio Section -->
-                </div>
+            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects_id"></div>
         </div>
 
 
@@ -340,15 +181,7 @@
             </div>
         </div>
 
-        <div class="container-fluid" style="position: relative; top: 10%;">
-            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text4">
-                <i class="fa fa-facebook-official w3-xxxlarge w3-hover-opacity"></i>
-                <i class="fa fa-instagram w3-xxxlarge w3-hover-opacity"></i>
-                <i class="fa fa-snapchat w3-xxxlarge w3-hover-opacity"></i>
-                <i class="fa fa-pinterest-p w3-xxxlarge w3-hover-opacity"></i>
-                <i class="fa fa-twitter w3-xxxlarge w3-hover-opacity"></i>
-                <i class="fa fa-linkedin w3-xxxlarge w3-hover-opacity"></i>
-            </div>
+        <div class="container-fluid" id="socials" style="position: relative; top: 10%;">
         </div>
 
 
@@ -359,9 +192,7 @@
         <div class="container-fluid" id="Text6" style="position: relative; top: 20%;">
 
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photos">
-                <h2 class="w3-text-white">MEME MEME MEME MEME MEME MEME MEME MEME MEME</h2>
-                <!-- <hr style="width:200px" class="w3-opacity"> -->
-
+                <h2 class="w3-text-white">Gallery</h2>
                 <!-- Grid for photos -->
                 <div class="w3-row-padding" style="margin:0 -64px">
                     <div class="w3-third">
@@ -400,41 +231,41 @@
 
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSeH_-yFZF0fjGByXxzfvlXEnLTQ_RI9VNHXWn8MbmrqTw9VPQ/formResponse" class="w3-hide-small" method="post" style="padding:10%">
                 Give me some music! <br> <br>
-                name: 
+                Name: 
                 <input type="text" name="entry.2005620554">
-                insta: 
+                Instagram: 
                 <input type="text" name="entry.1045781291">
-                song:
+                Song:
                 <input type="text" name="entry.839337160">
                 <br> <br>
                 <input type="submit">
-
             </form>
 
             <form action="https://docs.google.com/forms/d/e/1FAIpQLSeH_-yFZF0fjGByXxzfvlXEnLTQ_RI9VNHXWn8MbmrqTw9VPQ/formResponse" class="w3-hide-large w3-hide-medium" method="post" style="padding:10%">
                 Give me some music! <br> <br>
-                name: <br>
+                Name: <br>
                 <input type="text" name="entry.2005620554"> <br><br>
-                insta: <br>
+                Instagram: <br>
                 <input type="text" name="entry.1045781291"> <br><br>
-                song: <br>
+                Song: <br>
                 <input type="text" name="entry.839337160"> <br><br>
                 <br> <br>
                 <input type="submit">
-
             </form>
-
 
             <h5>
                 Music that I like:
             </h5>
 
-            <iframe src="https://open.spotify.com/embed/album/0G7m33seZhMkGSSXNVYD4I?theme=0" width="100%" height="380"
-                frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/album/0G7m33seZhMkGSSXNVYD4I?theme=0" width="100%" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/0UV5zxRMz6AO4ZwUOZNIKI?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/7sleciwgzL1FTJX0fcUECh?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe src="https://open.spotify.com/embed/track/6ZZu9BgvLpspvURUQxdJmG?utm_source=generator" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
         </div>
         <script>hideAllTexts();</script>
     </div>
-
+    
     <!-- END PAGE CONTENT -->
     </div>
 
@@ -451,4 +282,82 @@
 
 <script>update();</script>
 
+ <!--
+    <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
+    <p class="w3-wide">Photography</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="w3-wide">Memes</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="w3-wide">Photoshop</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    -->
+
+    <!--
+        <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">11+</span><br>
+                BEANS
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">55+</span><br>
+                BEANS EATEN pog
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">89+</span><br>
+                poopies made
+            </div>
+            <div class="w3-quarter w3-section">
+                <span class="w3-xlarge">~3</span><br>
+                braine cells
+            </div>
+        </div>
+    -->
+
+            <!-- Grid for pricing tables 
+            <h3 class="w3-padding-16 w3-text-light-grey">Services</h3>
+            <div class="w3-row-padding" style="margin:0 -16px">
+                <div class="w3-half w3-margin-bottom">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+                        <li class="w3-padding-16">A video of me giving you a random fact</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 5</h2>
+                            <span class="w3-opacity">One time payment</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="w3-half">
+                    <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+                        <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+                        <li class="w3-padding-16">Short coding video</li>
+                        <li class="w3-padding-16">
+                            <h2>$ 15</h2>
+                            <span class="w3-opacity">One time payment</span>
+                        </li>
+                        <li class="w3-light-grey w3-padding-24">
+                            <button class="w3-button w3-white w3-padding-large w3-hover-black">Buy Now</button>
+                        </li>
+                    </ul>
+                </div>
+                 End Grid/Pricing tables -->
+                 <!-- Testimonials
+             <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>
+             <img src="https://cdn140.picsart.com/235697139026212.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+             <p><span class="w3-large w3-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+             <p>John Doe saved us from a web disaster.</p><br>
+     
+             <img src="https://www.mypokecard.com/en/Gallery/my/galery/ys8wcxtEKWQy.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+             <p><span class="w3-large w3-margin-right">Dr. Phil</span> CEO of ur mom</p>
+             <p>No one is better than philly boy</p>
+             -->
 </html>
