@@ -367,6 +367,10 @@ footer {
     left      : 100px;
 }
 
+button{
+    z-index: 101;
+}
+
 @keyframes pulse {
     from {
         transform: translateY(0px);
