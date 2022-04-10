@@ -9,10 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="navbar.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -23,20 +20,15 @@
     <script src="circle.js"></script>
     </script>
 
-    <img src="https://avatars.githubusercontent.com/u/69643452?v=4"
-        alt="E" style="display: none;">
+    <img src="https://avatars.githubusercontent.com/u/69643452?v=4" alt="E" style="display: none;">
 
 
     <script src="jquery.js"></script>
     <script>
         $(function () {
-            $("#projects_id").load("projects.html");
             $("#myNavbar").load("myNavbar.html");
             $("#navbar").load("navbar.html");
-            $("#socials").load("socials.html");
             $("#sunID").load("circle.html");
-            $("#testID").load("test.html");
-            
         });
     </script>
 
@@ -44,46 +36,42 @@
 
 <body onload="startSite();" class="w3-black">
 
-    <div id="testID"></div>
-
     <div id="navbar"></div>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-hide-large w3-hide-medium" id="myNavbar">
+        <nav class="w3-hide-large w3-hide-medium navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
+                onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
+            <div id="mobileNav" class="collapse navbar-collapse">
+                <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button"
+                    onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+                <a id="photosSm" href="#Text6" class="w3-bar-item w3-button"
+                    onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
+                <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button"
+                    onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+                <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
+                    onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+                <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
+                    onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+                <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
+                    onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+            </div>
+        </nav>
     </div>
-    <nav class="w3-hide-large w3-hide-medium navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNav">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
-            onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
-        <div id="mobileNav" class="collapse navbar-collapse">
-            <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button"
-                onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
-            <a id="photosSm" href="#Text6" class="w3-bar-item w3-button"
-                onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
-            <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button"
-                onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
-            <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
-                onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
-            <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
-                onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
-            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
-                onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
-        </div>
-
 
     <!--<img src="websitebanner.jpg" alt="header image" /> -->
 
     <div id="container-2" class="w3-hide-small">
         <div class="sun" id="sunID" style="position: relative;"></div>
     </div>
+
     <div style="position: relative; top: 20%;">
-    
-
-
         <div class="container-fluid">
 
             <div class="w3-content w3-justify w3-text-grey" id="Text1">
@@ -113,6 +101,31 @@
 
         <div class="container-fluid" id="Text2">
             <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects_id">
+                <h2 class="w3-text-white">Projects</h2>
+                <!-- <hr style="width:200px" class="w3-opacity"> -->
+                <!-- Grid for photos -->
+                <div class="w3-row-padding" style="margin:0 -64px">
+                    <div class="w3-third">
+                        <a href="https://www.tiktok.com/@willyidk?lang=en" target="_blank"> <img
+                                src="https://images.macrumors.com/t/HBigcx8ZDm2EGrjV1Sd2D-8p5qg=/1600x0/article-new/2020/08/tiktok-logo.jpg"
+                                style="width:100%"></a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a href="https://github.com/Will-chartrand" target="_blank"> <img
+                                src="https://portswigger.net/cms/images/54/14/6efb9bc5d143-article-190612-github-body-text.jpg"
+                                style="width:100%"></a>
+                    </div>
+
+                    <div class="w3-third">
+                        <a href="https://www.instagram.com/will_does.stuff/" target="_blank"> <img
+                                src="https://i.pinimg.com/originals/0c/23/33/0c23332059f19519c291c00496b5f056.jpg"
+                                style="width:100%"></a>
+                    </div>
+
+                    <!-- End photo grid -->
+                </div>
+                <!-- End Portfolio Section -->
             </div>
         </div>
 
@@ -133,7 +146,7 @@
                         </p>
                         <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:
                             willchartrand@gmail.com</p>
-                    </div><br>  
+                    </div><br>
                     <p>This is not working as of right now</p>
 
                     <form action="/action_page.php" target="_blank">
@@ -159,7 +172,8 @@
             </div>
         </div>
 
-        <div class="container-fluid" id="socials" style="position: relative; top: 10%;">
+        <div class="container-fluid" id="Text4" style="position: relative; top: 10%;">
+            This is text 4
         </div>
 
 
@@ -260,8 +274,6 @@
 
 
     <!-- END PAGE CONTENT -->
-    </div>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
