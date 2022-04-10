@@ -45,3 +45,55 @@
     z-index: 100;
     padding: 1vh;
  }
+
+ .icon-bar {
+  color: red;
+  border-color: red;
+  background-color: red;
+}
+
+
+.toggle, [id^=drop]{
+  display: none;
+}
+
+#logo{
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#main-toggle{
+  cursor: pointer;
+  float: right;
+  padding: 28px 28px;
+  position: relative;
+  user-select: none;
+}
+
+.nav-icon{
+  background: #333;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+}
+
+.nav-icon-before
+.nav-icon:after{
+  background: orange;
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.nav-icon:before{
+  top:5px;
+}
+
+.nav-icon:after{
+  top:-5px;
+}

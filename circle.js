@@ -10,11 +10,14 @@ var i = 0;
 
 
 function clickDot(obj, textObj, circleObj, _rotateBy) {
-	 	//$(obj).on('click', function() {
 		hideAllTexts();
 		rotateCircle(_rotateBy);	
 		$(textObj).toggle("slow");
+}
 
+function clickDot(textObj) {
+		hideAllTexts();
+		$(textObj).toggle("slow");
 }
 
 function hideAllTexts() {
