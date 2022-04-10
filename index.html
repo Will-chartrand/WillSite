@@ -47,6 +47,29 @@
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div class="w3-hide-large w3-hide-medium" id="myNavbar">
     </div>
+    <nav class="w3-hide-large w3-hide-medium navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobileNav">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
+            onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
+        <div id="mobileNav" class="collapse navbar-collapse">
+            <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button"
+                onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+            <a id="photosSm" href="#Text6" class="w3-bar-item w3-button"
+                onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
+            <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button"
+                onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+            <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
+                onclick="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+            <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
+                onclick=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+            <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
+                onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+        </div>
+
 
     <!--<img src="websitebanner.jpg" alt="header image" /> -->
 
