@@ -15,11 +15,6 @@ function clickDot(obj, textObj, circleObj, _rotateBy) {
 		$(textObj).toggle("slow");
 }
 
-function clickDot(textObj) {
-		hideAllTexts();
-		$(textObj).toggle("slow");
-}
-
 function hideAllTexts() {
 	var textCounter = 0;
 	for(textCounter = 0; textCounter < 9; textCounter++) {
