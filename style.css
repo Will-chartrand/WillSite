@@ -54,6 +54,7 @@ ul {
 li {
     float: right;
     display: inline;
+    width: 100%;
 }
 
 li a {
