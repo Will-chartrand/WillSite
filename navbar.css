@@ -47,9 +47,9 @@
  }
 
  .icon-bar {
-  color: red;
-  border-color: red;
-  background-color: red;
+  color: white;
+  border-color: white;
+  background-color: white;
 }
 
 
@@ -74,11 +74,12 @@
 }
 
 .nav-icon{
-  background: #333;
+  background: black;
   display: block;
   height: 2px;
   width: 18px;
   position: relative;
+  border-bottom: white;
 }
 
 .nav-icon-before
