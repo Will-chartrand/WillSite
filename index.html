@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="testingPage.css">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -24,6 +25,7 @@
 
 
     <script src="jquery.js"></script>
+
     <script>
         $(function () {
             $("#myNavbar").load("myNavbar.html");
@@ -49,18 +51,20 @@
             <a id="homeSm" href="index.html" class="w3-bar-item w3-button" style="width:25% !important"
                 ontouchstart="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
             <div id="mobileNav" class="collapse navbar-collapse">
-                <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button"
-                ontouchstart="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
-                <a id="photosSm" href="#Text6" class="w3-bar-item w3-button"
-                ontouchstart="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
-                <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button"
-                ontouchstart="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
-                <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
-                ontouchstart="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
-                <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
-                ontouchstart=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
-                <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
-                ontouchstart="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+                <ul class="nav navbar-nav">
+                    <a id="aboutSm" href="#Text4" class="w3-bar-item w3-button"
+                    ontouchstart="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+                    <a id="photosSm" href="#Text6" class="w3-bar-item w3-button"
+                    ontouchstart="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
+                    <a id="projectsSm" href="#Text2" class="w3-bar-item w3-button"
+                    ontouchstart="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+                    <a id="contactSm" href="#Text3" class="w3-bar-item w3-button"
+                    ontouchstart="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+                    <a id="codeSm" href="#Text7" class="w3-bar-item w3-button"
+                    ontouchstart=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+                    <a id="musicSm" href="#Text8" class="w3-bar-item w3-button"
+                    ontouchstart="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+                </ul>
             </div>
         </nav>
     </div>
