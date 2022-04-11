@@ -8,7 +8,6 @@ var _CURRENT_ANGLE = 0;
 var currentRotation = 0;
 var i = 0;
 
-
 function clickDot(obj, textObj, circleObj, _rotateBy) {
 		hideAllTexts();
 		rotateCircle(_rotateBy);	
@@ -38,33 +37,6 @@ function rotateCircle(rotateBy) {
 	return;
 }
 
-function rotate45deg(targetAngle) {
-	$("#sunID").css( { transform: 'rotate('+targetAngle+'deg)'});
-			$("#dotID1").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID2").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID3").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID4").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID5").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID6").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID7").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-			$("#dotID8").css({ transform: 'rotate(-'+targetAngle+'deg)'});
-}
-
-function rotateProjectWheel(rotateBy) {
-	
-	//alert(_CURRENT_ANGLE + " " + rotateBy + " " + currentRotation);
-		$("#projectWheel").css({ transform: 'rotate(' + rotateBy + 'deg)' });
-		$("#projectID1").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID2").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID3").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID4").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID5").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID6").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID7").css({ transform: 'rotate('+currentRotation+'deg)'});
-		$("#projectID8").css({ transform: 'rotate('+currentRotation+'deg)'});
-	return;
-}
-
 function getRotationDegrees(obj) {
     var matrix = obj.css("-webkit-transform") ||
     obj.css("-moz-transform")    ||
@@ -86,6 +58,7 @@ function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+
 $.fn.rotationInfo = function() {
     var el = $(this),
         tr = el.css("-webkit-transform") || el.css("-moz-transform") || el.css("-ms-transform") || el.css("-o-transform") || '',
@@ -99,36 +72,3 @@ $.fn.rotationInfo = function() {
     }
     return info;
 };
-
-
-/*
-$('.dot1').hover(
-	function() {
-	  $(this).css({scale: 1.2});
-	}
-  );
-  $('.dot2').hover(
-	function() {
-	  $(this).css({scale: 1.2});
-	}
-  );
-  $('.dot3').hover(
-	function() {
-	  $(this).css({scale: 1.2});
-	}
-  );
-  $('.dot4').hover(
-	function() {
-	  $(this).css({scale: 1.2});
-	}
-  );
-
-  $('.dot1').addEventListener("mouseover", hoverAnimation());
-  $('.dot2').addEventListener("mouseover", hoverAnimation());
-  $('.dot1').onmouseover(hoverAnimation());
-  $('.dot2').onmouseover(hoverAnimation());
-
-
-  function hoverAnimation() {
-	$(this).css({scale: 1.2});
-  }*/
