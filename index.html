@@ -25,25 +25,83 @@
 
     <img src="https://avatars.githubusercontent.com/u/69643452?v=4" alt="E" style="display: none;">
 
-    <script>
-        $(function () {
-            $("#navbar").load("./navbar.html");
-            $("#sunID").load("./circle.html");
-        });
-    </script>
-        
 </head>
 
 <body onload="startSite();" class="w3-black">
 
-    <div id="navbar" class="w3-hide-small"></div>
+    <div id="navbar" class="w3-hide-small">
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav style="left: 50%;" class="ul w3-bar-block w3-small w3-hide-small w3-center">
+            <li id="navCode" onclick=" clickDot('#navCode', '#Text7', '#sunID', 315);">
+                <a href="#Text7" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-code w3-xxlarge"></i>
+                    <p>Code</p>
+                </a>
+            </li>
+            <!-- Avatar image in top left corner -->
+
+            <li id="navContact" onclick="clickDot('#navContact', '#Text3', '#sunID', 90);">
+                <a href="#Text3" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-envelope w3-xxlarge"></i>
+                    <p>Contact</p>
+                </a>
+            </li>
+
+            <li id="navPhotos" onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-45);">
+                <a href="#Text6" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-eye w3-xxlarge"></i>
+                    <p>Photos</p>
+                </a>
+            </li>
+
+            <li id="navProjects" onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">
+                <a href="#Text2" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-book w3-xxlarge"></i>
+                    <p>Projects</p>
+                </a>
+            </li>
+
+
+            <li id="navAbout" onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">
+                <a href="#Text4" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-user w3-xxlarge"></i>
+                    <p>About</p>
+                </a>
+            </li>
+
+            <!--
+            <li id="blog">
+                <a class="w3-bar-item w3-button w3-padding-large w3-hover-white" href="blog/blog.html">
+                    <i class="fa fa-file-text w3-xxlarge"></i>
+                    <p>Blog</p>
+                </a>
+            </li>
+        -->
+
+            <li id="navMusic" onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">
+                <a href="#Text8" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-music w3-xxlarge"></i>
+                    <p>Music</p>
+                </a>
+            </li>
+
+            <li id="navHome" onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">
+                <a href="#Text1" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                    <i class="fa fa-home w3-xxlarge"></i>
+                    <p>Home</p>
+                </a>
+            </li>
+        </nav>
+
+    </div>
 
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div id="myNavbar" class="w3-hide-large w3-hide-medium ">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
             <a id="homeSm" href="index.html" class=""
                 ontouchstart="clickDot('#navHome', '#Text1', '#sunID', 180);">HOME</a>
-            <button type="button" class="navbar-toggle collapsed" style="vertical-align:middle;" data-toggle="collapse" data-target="#mobileNav">
+            <button type="button" class="navbar-toggle collapsed" style="vertical-align:middle;" data-toggle="collapse"
+                data-target="#mobileNav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -51,22 +109,28 @@
             <div id="mobileNav" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
                     <li style="width: 100%;">
-                        <a id="aboutSm" href="#Text4" ontouchstart="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
+                        <a id="aboutSm" href="#Text4"
+                            ontouchstart="clickDot('#navAbout', '#Text4', '#sunID', 270);">ABOUT</a>
                     </li>
                     <li style="width: 100%;">
-                        <a id="photosSm" href="#Text6" ontouchstart="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
+                        <a id="photosSm" href="#Text6"
+                            ontouchstart="clickDot('#navPhotos', '#Text6', '#sunID', 180-85);">PHOTOS</a>
                     </li>
                     <li style="width: 100%;">
-                        <a id="projectsSm" href="#Text2" ontouchstart="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
+                        <a id="projectsSm" href="#Text2"
+                            ontouchstart="clickDot('#navProjects', '#Text2', '#sunID', 0);">PROJECTS</a>
                     </li>
                     <li style="width: 100%;">
-                        <a id="contactSm" href="#Text3" ontouchstart="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
+                        <a id="contactSm" href="#Text3"
+                            ontouchstart="clickDot('#contactSm', '#Text3', '#sunID', 90);">CONTACT</a>
                     </li>
                     <li style="width: 100%;">
-                        <a id="codeSm" href="#Text7" ontouchstart=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
+                        <a id="codeSm" href="#Text7"
+                            ontouchstart=" clickDot('codeSm', '#Text7', '#sunID', 315);">CODE</a>
                     </li>
                     <li style="width: 100%;">
-                        <a id="musicSm" href="#Text8" ontouchstart="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
+                        <a id="musicSm" href="#Text8"
+                            ontouchstart="clickDot('#navMusic', '#Text8', '#sunID', 45);">MUSIC</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +140,69 @@
     <!--<img src="websitebanner.jpg" alt="header image" /> -->
 
     <div id="container-2" class="w3-hide-small">
-        <div class="sun" id="sunID" style="position: relative;"></div>
+        <div class="sun" id="sunID" style="position: relative;">
+            <div class="dot1" id="dotID1" onclick="clickDot('.dot1', '#Text1', '#sunID', 180)">
+                <li id="home" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text1" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-home w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+            <div class="dot2" id="dotID2" onclick="clickDot('.dot2', '#Text2', '#sunID', 0)">
+                <li id="projects" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text2" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-book w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+            <div class="dot3" id="dotID3" onclick="clickDot('.dot3', '#Text3', '#sunID', 90)">
+                <li id="contact" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text3" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-envelope w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+            <div class="dot4" id="dotID4" onclick="clickDot('.dot4', '#Text4', '#sunID', 270);">
+                <li id="about" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text4" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-user w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+            <a href="index.html" style="color: darkslategray;" onclick="clickDot('.dot5', '#Text5', '#sunID', 180+45);">
+                <div class="dot5" id="dotID5" h><i class="fa fa-file-text w3-xxxlarge"
+                        style="left:6px; position: relative;"></i></div>
+            </a>
+
+            <div class="dot6" id="dotID6" onclick="clickDot('#photos', '#Text6', '#sunID', 180-45);">
+                <li id="photos" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text6" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-eye w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+            <div class="dot7" id="dotID7" onclick="clickDot('#code', '#Text7', '#sunID', 315);">
+                <li id="code" style="position: relative; left: 8px; bottom: 8px;">
+                    <a href="#Text7" class="w3-bar-item">
+                        <i class="w3-hover-opacity fa fa-code w3-xxxlarge" style="color: white;"></i>
+                    </a>
+                </li>
+            </div>
+
+
+            <div class="dot8" id="dotID8" onclick="clickDot('.dot8', '#Text8', '#sunID', 45);"">
+                    <li id=" Music" style="position: relative; left: 8px; bottom: 8px;">
+                <a href="#Text8" class="w3-bar-item">
+                    <i class="w3-hover-opacity fa fa-music w3-xxxlarge" style="color: white;"></i>
+                </a>
+                </li>
+            </div>
+        </div>
     </div>
 
     <div style="position: relative; top: 20%;">
