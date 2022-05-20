@@ -1,7 +1,8 @@
 
 function startSite() {
-	rotateCircle(180);
-	$('#Text1').show(1000);
+    clickDot('#navProjects', '#Text2', '#sunID', 0);
+	// rotateCircle(180);
+	// $('#Text1').show(1000);
 }
 
 var _CURRENT_ANGLE = 0;

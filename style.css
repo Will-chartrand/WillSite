@@ -77,6 +77,25 @@ footer {
     right: 100px;
 }
 
+.textbox {
+    padding: 1rem;
+}
+
+.card {
+    background-color: rgb(50, 50, 50);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.card-body {
+    
+}
+
+.mx-auto {
+    margin-right: auto !important;
+    margin-left: auto !important;
+   }
+
 .dot1 {
     position          : absolute;
     top               : -25px;
@@ -198,7 +217,7 @@ footer {
     height  : 200px;
     position: relative;
 
-    background   : rgb(37, 37, 36);
+    background   : rgb(50, 50, 50);
     border-radius: 50%;
 
     transform : rotate(0deg);

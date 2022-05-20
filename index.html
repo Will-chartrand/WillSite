@@ -205,7 +205,7 @@
         </div>
     </div>
 
-    <div style="position: relative; top: 20%;">
+    <div style="position: relative; top: 20%;" class="textbox">
         <div class="container-fluid">
 
             <div class="w3-content w3-justify w3-text-grey" id="Text1">
@@ -233,38 +233,119 @@
 
             <!-- End About Section -->
         </div>
+    </div>
 
+    <!-- Project Section-->
+
+    <div style="position: relative; top: 20%;">
         <div class="container-fluid" id="Text2">
-            <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="projects_id">
-                <h2 class="w3-text-white">Projects</h2>
-                <!-- <hr style="width:200px" class="w3-opacity"> -->
-                <!-- Grid for photos -->
-                <div class="w3-row-padding" style="margin:0 -64px">
-                    <div class="w3-third">
-                        <a href="https://www.tiktok.com/@willyidk?lang=en" target="_blank"> <img
-                                src="https://images.macrumors.com/t/HBigcx8ZDm2EGrjV1Sd2D-8p5qg=/1600x0/article-new/2020/08/tiktok-logo.jpg"
-                                style="width:100%"></a>
-                    </div>
+            <ul style="display: flex; flex-wrap: wrap;">
+                <li class="m-10 p-1" style="flex-grow: 1;">
+                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning" style="width: 40vh; height: 60vh">
+                            <div style="width: 100%;">
+                                <img src="./src/TikTok_Banner-1.jpg" style="width: 100%;" class="card-img-top" alt="">
+                            </div>
 
-                    <div class="w3-third">
-                        <a href="https://github.com/Will-chartrand" target="_blank"> <img
-                                src="https://portswigger.net/cms/images/54/14/6efb9bc5d143-article-190612-github-body-text.jpg"
-                                style="width:100%"></a>
-                    </div>
+                            <div class="card-body" style="position: relative; bottom: 0%">
+                                <h5 class="card-title">Tik Tok Page</h5>
+                                <p class="card-text">A couple videos of robot projects that I've done</p>
+                                <a href="https://www.tiktok.com/@willyidk?lang=en" class="btn btn-primary">Visit Page</a>
+                            </div>
+                        </div>
+                </li>
 
-                    <div class="w3-third">
-                        <a href="https://www.instagram.com/will_does.stuff/" target="_blank"> <img
-                                src="https://i.pinimg.com/originals/0c/23/33/0c23332059f19519c291c00496b5f056.jpg"
-                                style="width:100%"></a>
-                    </div>
+                <li class="m-2" style="flex-grow: 1;">
+                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning" style="width: 40vh; height: 60vh">
+                            <div style="width: 100%; height: 10rem">
+                                <img src="./src/github.png" style="width: 100%;" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Github Page</h5>
+                                <p class="card-text">All of my public projects</p>
+                                <a href="https://github.com/Will-chartrand" class="btn btn-primary" style="bottom: 10vh;">Visit Page</a>
+                            </div>
+                        </div>
+                </li>
 
-                    <!-- End photo grid -->
-                </div>
-                <!-- End Portfolio Section -->
-            </div>
+                <li class="m-2" style="flex-grow: 1;">
+                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning m-3" style="width: 40vh; height: 60vh">
+                            <div style="width: 100%; height: 10rem">
+                                <img src="./src/instagram-banner-01.png" style="width: 100%;" class="card-img-top"
+                                    alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Instagram Page</h5>
+                                <p class="card-text">Where I post updates about what I'm working on, and the things I do
+                                </p>
+                                <a href="https://www.instagram.com/will_does.stuff/" class="btn btn-primary" style="bottom: 10vh;">Visit
+                                    Page</a>
+                            </div>
+                        </div>
+
+                </li>
+            </ul>
+
         </div>
 
+    </div>
 
+    <!--
+
+            <div style="position: relative; top: 20%;" class="textbox">
+                <div class="container-fluid" id="Text2">
+                    <div class="row">
+                        
+                        
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <div class="card" style="width: 18rem;">
+                                <img src="..." class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+
+                        <a href="https://www.tiktok.com/@willyidk?lang=en" target="_blank"
+                        class="w-100 shadow-1-strong rounded mb-4">
+                        <img class="w-100 shadow-1-strong rounded mb-4"
+                        src="https://images.macrumors.com/t/HBigcx8ZDm2EGrjV1Sd2D-8p5qg=/1600x0/article-new/2020/08/tiktok-logo.jpg">
+                        </a>
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+                            class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
+                            
+                    </div>
+
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a href="https://github.com/Will-chartrand" target="_blank" style="width: 30%;">
+                            <img class="w-100 shadow-1-strong rounded mb-4"
+                                src="./src/GitHub-Mark/PNG/GitHub-Mark-Light-120px-plus.png">
+                        </a>
+                        
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+                        class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
+                    </div>
+                    
+                    <div class="col-lg-4 mb-4 mb-lg-0">
+                        <a href="https://www.instagram.com/will_does.stuff/" target="_blank" style="width: 30%;">
+                            <img class="w-100 shadow-1-strong rounded mb-4"
+                                src="https://i.pinimg.com/originals/0c/23/33/0c23332059f19519c291c00496b5f056.jpg">
+                        </a>
+
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+                        class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    -->
+    <!-- End Project Section-->
+
+    <div style="position: relative; top: 20%;" class="textbox">
         <div class="container-fluid" id="Text3">
             <div class="w3-content w3-justify w3-text-grey">
                 <!-- Contact Section -->
@@ -306,17 +387,23 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="container-fluid" id="Text4" style="position: relative; top: 10%;">
+    <div style="position: relative; top: 20%;" class="textbox">
+        <div class="container-fluid" id="Text4">
             This is text 4
         </div>
+    </div>
 
-
+    <div style="position: relative; top: 20%;" class="textbox">
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text5" style="position: relative; top: 10%;">
             Blog
         </div>
+    </div>
 
-        <div class="container-fluid" id="Text6" style="position: relative; top: 20%;">
+    <div style="position: relative; top: 20%;" class="textbox">
+        <div class="container-fluid" id="Text6">
+
             <!--
 
     <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photos">
@@ -354,9 +441,15 @@
                 <-- End Portfolio Section ->
             -->
         </div>
-        <div class="container-fluid" id="Text7" style="position: relative; top: 10%;">
+    </div>
+
+    <div style="position: relative; top: 20%;" class="textbox">
+        <div class="container-fluid" id="Text7">
             Coding stuff
         </div>
+    </div>
+
+    <div style="position: relative; top: 20%;" class="textbox">
 
         <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text8" style="position: relative; top: 20%;">
 
@@ -420,6 +513,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
 </body>
 
 <!--
