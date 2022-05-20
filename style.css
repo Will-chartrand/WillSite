@@ -85,10 +85,12 @@ footer {
     background-color: rgb(50, 50, 50);
     padding: 2rem;
     border-radius: 1rem;
+    position: relative;
 }
 
 .card-body {
-    
+    position: absolute;
+    bottom: 5%;
 }
 
 .mx-auto {
@@ -223,6 +225,19 @@ footer {
     transform : rotate(0deg);
     transition: transform 0.7s linear;
     top       : 120px;
+    margin    : auto
+}
+
+.sunInside {
+    width   : 180px;
+    height  : 180px;
+    position: inherit; 
+
+    background   : rgb(0, 0, 0);
+    border-radius: 50%;
+
+    transition: transform 0.7s linear;
+    top       : 10px;
     margin    : auto
 }
 
