@@ -84,8 +84,10 @@ footer {
 .card {
     background-color: rgb(50, 50, 50);
     padding: 2rem;
+    margin: 2rem;
     border-radius: 1rem;
     position: relative;
+    white-space: normal;
 }
 
 .card-body {
@@ -96,7 +98,10 @@ footer {
 .mx-auto {
     margin-right: auto !important;
     margin-left: auto !important;
-   }
+}
+
+.dot {
+}
 
 .dot1 {
     position          : absolute;
@@ -111,9 +116,6 @@ footer {
     object-fit        : contain;
 }
 
-.dot1.active {
-    transform: scale(1.5);
-}
 
 .dot2 {
     position     : absolute;

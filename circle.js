@@ -1,8 +1,12 @@
 
 function startSite() {
-    // clickDot('#navProjects', '#Text2', '#sunID', 0);
-	rotateCircle(180);
-	$('#Text1').show(1000);
+    clickDot('#navProjects', '#Text2', '#sunID', 0);
+	// rotateCircle(180);
+	// $('#Text1').show(1000);
+
+	$(document).ready(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+	});
 }
 
 var _CURRENT_ANGLE = 0;
@@ -10,9 +14,13 @@ var currentRotation = 0;
 var i = 0;
 
 function clickDot(obj, textObj, circleObj, _rotateBy) {
-		hideAllTexts();
-		rotateCircle(_rotateBy);	
-		$(textObj).toggle("slow");
+	hideAllTexts();
+	rotateCircle(_rotateBy);
+    
+	$(obj).delay(1000).animate({top: 50}, 1000)
+	
+	//$(obj).css({"transition-delay: 2s; -webkit-transform":"translate(10rem,10rem)"}); 
+	$(textObj).toggle("slow");
 }
 
 function hideAllTexts() {
@@ -26,14 +34,7 @@ function rotateCircle(rotateBy) {
 	currentRotation = getRotationDegrees($('.sun'));
 	if(currentRotation % 360 != rotateBy) {
 		$("#sunID").css( { transform: 'rotate('+rotateBy+'deg)'});
-			$("#dotID1").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID2").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID3").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID4").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID5").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID6").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID7").css({ transform: 'rotate(-'+rotateBy+'deg)'});
-			$("#dotID8").css({ transform: 'rotate(-'+rotateBy+'deg)'});
+		$(".dot").css({ transform: 'rotate(-'+rotateBy+'deg)'});
 	}
 	return;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
  <!-- Tell user what icon is on hover -->
+ <!-- add delay between icon transitions -->
 
 <html>
 
@@ -145,63 +146,62 @@
     <div id="container-2" class="w3-hide-small">
         <div class="sun" id="sunID" style="position: relative;">
             <div class="sunInside"></div>
-            <div class="dot1" id="dotID1" onclick="clickDot('.dot1', '#Text1', '#sunID', 180)">
-                <li id="home" style="position: relative; left: 8px; bottom: 8px;">
+            <div class="dot dot1" id="dotID1" onclick="clickDot('.dot1', '#Text1', '#sunID', 180)">
+                <li id="home" style="position: relative; left: 8px; bottom: 8px;" data-toggle="tooltip" data-placement="top" data-container="body" title="Home">
                     <a href="#Text1" class="w3-bar-item">
                         <i class="w3-hover-opacity fa fa-home w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
-            <div class="dot2" id="dotID2" onclick="clickDot('.dot2', '#Text2', '#sunID', 0)">
+            <div class="dot dot2" id="dotID2" onclick="clickDot('.dot2', '#Text2', '#sunID', 0)">
                 <li id="projects" style="position: relative; left: 8px; bottom: 8px;">
-                    <a href="#Text2" class="w3-bar-item">
+                    <a href="#Text2" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="Projects">
                         <i class="w3-hover-opacity fa fa-book w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
-            <div class="dot3" id="dotID3" onclick="clickDot('.dot3', '#Text3', '#sunID', 90)">
+            <div class="dot dot3" id="dotID3" onclick="clickDot('.dot3', '#Text3', '#sunID', 90)">
                 <li id="contact" style="position: relative; left: 8px; bottom: 8px;">
-                    <a href="#Text3" class="w3-bar-item">
+                    <a href="#Text3" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="Contact">
                         <i class="w3-hover-opacity fa fa-envelope w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
-            <div class="dot4" id="dotID4" onclick="clickDot('.dot4', '#Text4', '#sunID', 270);">
+            <div class="dot dot4" id="dotID4" onclick="clickDot('.dot4', '#Text4', '#sunID', 270);">
                 <li id="about" style="position: relative; left: 8px; bottom: 8px;">
-                    <a href="#Text4" class="w3-bar-item">
+                    <a href="#Text4" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="About">
                         <i class="w3-hover-opacity fa fa-user w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
             <a href="index.html" style="color: darkslategray;" onclick="clickDot('.dot5', '#Text5', '#sunID', 180+45);">
-                <div class="dot5" id="dotID5" h><i class="fa fa-file-text w3-xxxlarge"
-                        style="left:6px; position: relative;"></i></div>
+                <div class="dot dot5" id="dotID5" h><i class="fa fa-file-text w3-xxxlarge" style="left:6px; position: relative;" data-toggle="tooltip" data-placement="top" data-container="body" title=""></i></div>
             </a>
 
-            <div class="dot6" id="dotID6" onclick="clickDot('#photos', '#Text6', '#sunID', 180-45);">
+            <div class="dot dot6" id="dotID6" onclick="clickDot('#photos', '#Text6', '#sunID', 180-45);">
                 <li id="photos" style="position: relative; left: 8px; bottom: 8px;">
-                    <a href="#Text6" class="w3-bar-item">
+                    <a href="#Text6" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="Photos">
                         <i class="w3-hover-opacity fa fa-eye w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
-            <div class="dot7" id="dotID7" onclick="clickDot('#code', '#Text7', '#sunID', 315);">
+            <div class="dot dot7" id="dotID7" onclick="clickDot('#code', '#Text7', '#sunID', 315);">
                 <li id="code" style="position: relative; left: 8px; bottom: 8px;">
-                    <a href="#Text7" class="w3-bar-item">
+                    <a href="#Text7" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="Code">
                         <i class="w3-hover-opacity fa fa-code w3-xxxlarge" style="color: white;"></i>
                     </a>
                 </li>
             </div>
 
 
-            <div class="dot8" id="dotID8" onclick="clickDot('.dot8', '#Text8', '#sunID', 45);"">
+            <div class="dot dot8" id="dotID8" onclick="clickDot('.dot8', '#Text8', '#sunID', 45);">
                     <li id=" Music" style="position: relative; left: 8px; bottom: 8px;">
-                <a href="#Text8" class="w3-bar-item">
+                <a href="#Text8" class="w3-bar-item" data-toggle="tooltip" data-placement="top" data-container="body" title="Music">
                     <i class="w3-hover-opacity fa fa-music w3-xxxlarge" style="color: white;"></i>
                 </a>
                 </li>
@@ -244,8 +244,8 @@
     <div style="position: relative; top: 20%;">
         <div class="container-fluid" id="Text2">
             <ul style="display: flex; flex-wrap: wrap;">
-                <li class="m-10 p-1" style="flex-grow: 1;">
-                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning" style="width: 40vh; height: 60vh">
+                <li class="m-10 p-1">
+                        <div class="card border w3-border-white rounded-lg bg-warning" style="width: 20rem; height: 30rem">
                             <div style="width: 100%;">
                                 <img src="./src/TikTok_Banner-1.jpg" style="width: 100%;" class="card-img-top" alt="">
                             </div>
@@ -258,8 +258,8 @@
                         </div>
                 </li>
 
-                <li class="m-2" style="flex-grow: 1;">
-                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning" style="width: 40vh; height: 60vh">
+                <li class="m-10">
+                        <div class="card border w3-border-white rounded-lg bg-warning" style="width: 20rem; height: 30rem">
                             <div style="width: 100%; height: 10rem">
                                 <img src="./src/github.png" style="width: 100%;" class="card-img-top" alt="...">
                             </div>
@@ -271,8 +271,8 @@
                         </div>
                 </li>
 
-                <li class="m-2" style="flex-grow: 1;">
-                        <div class="card mx-auto border w3-border-white rounded-lg bg-warning m-3" style="width: 40vh; height: 60vh">
+                <li class="m-10">
+                        <div class="card border w3-border-white rounded-lg bg-warning" style="width: 20rem; height: 30rem">
                             <div style="width: 100%; height: 10rem">
                                 <img src="./src/instagram-banner-01.png" style="width: 100%;" class="card-img-top"
                                     alt="...">
