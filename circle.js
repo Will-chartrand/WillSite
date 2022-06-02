@@ -1,8 +1,8 @@
 
 function startSite() {
     clickDot('#navProjects', '#Text2', '#sunID', 0);
-	// rotateCircle(180);
-	// $('#Text1').show(1000);
+	rotateCircle(180);
+	$('#Text1').show(1000);
 
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
