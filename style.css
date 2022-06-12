@@ -8,7 +8,7 @@ body {
 body {
     background: rgba(0, 0, 0, 0.5) url("src/forest.jpg");
     background-size: 80%;
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-blend-mode: darken;
 }
 
