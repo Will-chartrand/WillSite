@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 
- <!-- Tell user what icon is on hover (DOESN'T WORK ON CHROME OR BRAVE YET) -->
- <!-- add delay between icon transitions -->
- <!-- Background image, make wheel look nicer -->
- <!-- Issue with bottom icon on wheel - bottom half is covered by other invisible element -->
+<!-- add delay between icon transitions -->
+<!-- Issue with bottom icon on wheel - bottom half is covered by other invisible element -->
+
+<!-- Fix text colour -->
 
 <html>
 
@@ -27,80 +27,87 @@
 
     <link rel="stylesheet" href="style.css">
     <script src="circle.js"></script>
-    </script>
 
     <img src="https://avatars.githubusercontent.com/u/69643452?v=4" alt="E" style="display: none;">
 
 </head>
 
-<body onload="startSite();" class="w3-black">
+<body onload="startSite();" class="">
 
     <div id="navbar" class="w3-hide-small">
+        
         <!-- Icon Bar (Sidebar - hidden on small screens) -->
         <nav style="left: 50%;" class="ul w3-bar-block w3-small w3-hide-small w3-center">
             <li id="navCode" onclick=" clickDot('#navCode', '#Text7', '#sunID', 315);">
-                <a href="#Text7" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text7" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-code w3-xxlarge"></i>
                     <p>Code</p>
                 </a>
             </li>
             <!-- Avatar image in top left corner -->
-
+            
             <li id="navContact" onclick="clickDot('#navContact', '#Text3', '#sunID', 90);">
-                <a href="#Text3" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text3" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-envelope w3-xxlarge"></i>
                     <p>Contact</p>
                 </a>
             </li>
 
             <li id="navPhotos" onclick="clickDot('#navPhotos', '#Text6', '#sunID', 180-45);">
-                <a href="#Text6" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text6" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-eye w3-xxlarge"></i>
                     <p>Photos</p>
                 </a>
             </li>
-
+            
             <li id="navProjects" onclick="clickDot('#navProjects', '#Text2', '#sunID', 0);">
-                <a href="#Text2" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text2" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-book w3-xxlarge"></i>
                     <p>Projects</p>
                 </a>
             </li>
-
-
+            
             <li id="navAbout" onclick="clickDot('#navAbout', '#Text4', '#sunID', 270);">
-                <a href="#Text4" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text4" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-user w3-xxlarge"></i>
                     <p>About</p>
                 </a>
             </li>
-
+            
             <!--
-            <li id="blog">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hover-white" href="blog/blog.html">
-                    <i class="fa fa-file-text w3-xxlarge"></i>
-                    <p>Blog</p>
-                </a>
-            </li>
-        -->
-
+                <li id="blog">
+                    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white" href="blog/blog.html">
+                        <i class="fa fa-file-text w3-xxlarge"></i>
+                        <p>Blog</p>
+                    </a>
+                </li>
+            -->
+            
             <li id="navMusic" onclick="clickDot('#navMusic', '#Text8', '#sunID', 45);">
-                <a href="#Text8" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text8" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-music w3-xxlarge"></i>
                     <p>Music</p>
                 </a>
             </li>
-
+            
             <li id="navHome" onclick="clickDot('#navHome', '#Text1', '#sunID', 180);">
-                <a href="#Text1" class="w3-bar-item w3-button w3-padding-large w3-hover-white">
+                <a href="#Text1" class="w3-bar-item w3-padding-large w3-hover-white">
                     <i class="fa fa-home w3-xxlarge"></i>
                     <p>Home</p>
                 </a>
             </li>
+            
+            <li id="navCode" onclick="toggleSun();">
+                <a href="#Text7" class="w3-bar-item w3-padding-large w3-hover-white">
+                    <i class="fa fa-plus-circle w3-xxlarge"></i>
+                    <p>Menu</p>
+                </a>
+        
+            </li>
         </nav>
-
+        
     </div>
-
+    
     <!-- Navbar on small screens (Hidden on medium and large screens) -->
     <div id="myNavbar" class="w3-hide-large w3-hide-medium ">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
@@ -214,7 +221,7 @@
     <div style="position: relative; top: 20%;" class="textbox">
         <div class="container-fluid">
 
-            <div class="w3-content w3-justify w3-text-grey" id="Text1">
+            <div class="w3-content w3-justify" id="Text1">
                 <!-- About Section -->
                 <h2 class="w3-text-light-grey">Will Chartrand</h2>
                 <hr style="width: 75%" class="w3-opacity">
@@ -353,9 +360,9 @@
 
     <div style="position: relative; top: 20%;" class="textbox">
         <div class="container-fluid" id="Text3">
-            <div class="w3-content w3-justify w3-text-grey">
+            <div class="w3-content w3-justify w3-text-light-grey">
                 <!-- Contact Section -->
-                <div class="w3-content w3-text-grey" id="contact">
+                <div class="w3-content w3-text-light-grey" id="contact">
                     <h2 class="w3-text-light-grey">Contact Me</h2>
                     <hr style="width:200px" class="w3-opacity">
 
@@ -371,7 +378,7 @@
                     </div><br>
                     <p>This is not working as of right now</p>
 
-                    <form action="/action_page.php" target="_blank">
+                    <form action="mailto:willchartrand@gmail.com">
                         <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name">
                         </p>
                         <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email">
@@ -396,13 +403,13 @@
     </div>
 
     <div style="position: relative; top: 20%;" class="textbox">
-        <div class="container-fluid" id="Text4">
+        <div class="container-fluid w3-text-light-grey" id="Text4">
             This is text 4
         </div>
     </div>
 
     <div style="position: relative; top: 20%;" class="textbox">
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text5" style="position: relative; top: 10%;">
+        <div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="Text5" style="position: relative; top: 10%;">
             Blog
         </div>
     </div>
@@ -412,7 +419,7 @@
 
             <!--
 
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="photos">
+    <div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="photos">
         <h2 class="w3-text-white">MEME MEME MEME MEME MEME MEME MEME MEME MEME</h2>
         <!- <hr style="width:200px" class="w3-opacity"> ->
         
@@ -450,14 +457,14 @@
     </div>
 
     <div style="position: relative; top: 20%;" class="textbox">
-        <div class="container-fluid" id="Text7">
+        <div class="container-fluid w3-text-light-grey" id="Text7">
             Coding stuff
         </div>
     </div>
 
-    <div style="position: relative; top: 20%;" class="textbox">
+    <div style="position: relative;" class="textbox">
 
-        <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="Text8" style="position: relative; top: 20%;">
+        <div class="w3-content w3-justify w3-text-light-grey w3-padding-64" id="Text8" style="position: relative; top: 20%;">
 
             <form
                 action="https://docs.google.com/forms/d/e/1FAIpQLSeH_-yFZF0fjGByXxzfvlXEnLTQ_RI9VNHXWn8MbmrqTw9VPQ/formResponse"
@@ -510,10 +517,10 @@
 
     <!-- END PAGE CONTENT -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"

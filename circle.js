@@ -1,8 +1,10 @@
 
 function startSite() {
-    clickDot('#navProjects', '#Text2', '#sunID', 0);
+    // clickDot('#navProjects', '#Text2', '#sunID', 0);
 	rotateCircle(180);
 	$('#Text1').show(1000);
+
+	$(".sun").toggle("slow");
 
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
@@ -13,11 +15,20 @@ var _CURRENT_ANGLE = 0;
 var currentRotation = 0;
 var i = 0;
 
+
+function toggleSun() {
+	$(".sun").toggle("slow");
+}
+
+
 function clickDot(obj, textObj, circleObj, _rotateBy) {
 	hideAllTexts();
 	rotateCircle(_rotateBy);
+
+	setTimeout(function(){
+	}, 500); 
     
-	$(obj).delay(1000).animate({top: 50}, 1000)
+	// $(obj).delay(1000).animate({top: 50}, 1000)
 	
 	//$(obj).css({"transition-delay: 2s; -webkit-transform":"translate(10rem,10rem)"}); 
 	$(textObj).toggle("slow");
