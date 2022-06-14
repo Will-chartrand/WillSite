@@ -1,10 +1,12 @@
 
 function startSite() {
+	$('.sun').css("display", "none")
+
     // clickDot('#navProjects', '#Text2', '#sunID', 0);
 	rotateCircle(180);
 	$('#Text1').show(1000);
+	$('#Text1').css("display", "block")
 
-	$(".sun").toggle("slow");
 
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
@@ -38,7 +40,9 @@ function hideAllTexts() {
 	var textCounter = 0;
 	for(textCounter = 0; textCounter < 9; textCounter++) {
 		$('#Text' + textCounter).hide(1000);
+		$('#Text' + textCounter).css("display", "none");
 	}
+	$(".textbox").css("display", "none");
 }
 
 function rotateCircle(rotateBy) {
