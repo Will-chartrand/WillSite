@@ -111,6 +111,8 @@ footer {
 
 .card-title {
     color: white;
+    text-align: center;
+    padding: 1rem;
 }
 
 .mx-auto {
