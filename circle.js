@@ -1,28 +1,34 @@
 
+// The things that need to be set up at the start of the page
 function startSite() {
+	// Make the circle menu invisible
 	$('.sun').css("display", "none")
 
     // clickDot('#navProjects', '#Text2', '#sunID', 0);
+
+	// Rotate the circle to have the homepage icon at the bottom of it, then show the corresponding text
 	rotateCircle(180);
 	$('#Text1').show(1000);
 	$('#Text1').css("display", "block")
 
 
+	// Initializes the tooltip functionality (hover over the circle icons and see their titles)
 	$(document).ready(function(){
 		$('[data-toggle="tooltip"]').tooltip();
 	});
 }
 
+// Variable declaration (to keep track of where the circle is)
 var _CURRENT_ANGLE = 0;
 var currentRotation = 0;
 var i = 0;
 
-
+// Makes the circle menu visible
 function toggleSun() {
 	$(".sun").toggle("slow");
 }
 
-
+// Rotates the circle menu to the desired angle, delay for 500ms, then show the corresponding text for the icon that was clicked
 function clickDot(obj, textObj, circleObj, _rotateBy) {
 	hideAllTexts();
 	rotateCircle(_rotateBy);
@@ -36,6 +42,7 @@ function clickDot(obj, textObj, circleObj, _rotateBy) {
 	$(textObj).toggle("slow");
 }
 
+// loops through all of the text boxes and hides them
 function hideAllTexts() {
 	var textCounter = 0;
 	for(textCounter = 0; textCounter < 9; textCounter++) {
@@ -45,6 +52,7 @@ function hideAllTexts() {
 	$(".textbox").css("display", "none");
 }
 
+// Rotate the circle to the inputted angle
 function rotateCircle(rotateBy) {
 	currentRotation = getRotationDegrees($('.sun'));
 	if(currentRotation % 360 != rotateBy) {
@@ -54,6 +62,7 @@ function rotateCircle(rotateBy) {
 	return;
 }
 
+// Get the current angle of the rotation of the circle menu
 function getRotationDegrees(obj) {
     var matrix = obj.css("-webkit-transform") ||
     obj.css("-moz-transform")    ||

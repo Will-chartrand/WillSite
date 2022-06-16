@@ -120,6 +120,17 @@ footer {
     margin-left: auto !important;
 }
 
+
+.galleryimage {
+    width: 30rem;
+    height: auto;
+
+    padding 2rem;
+}
+
+
+
+
 .dot {
 }
 
