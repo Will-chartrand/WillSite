@@ -18,10 +18,18 @@ function startSite() {
 	});
 }
 
+
 // Variable declaration (to keep track of where the circle is)
 var _CURRENT_ANGLE = 0;
 var currentRotation = 0;
 var i = 0;
+
+// For the phone number slider
+var slider = document.getElementById("myRange");
+
+function updateTextInput(val) {
+          document.getElementById('textInput').value=val; 
+}
 
 // Makes the circle menu visible
 function toggleSun() {
